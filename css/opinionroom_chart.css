@@ -1,0 +1,343 @@
+#roof {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+#header {
+    display: flex;
+    float: end;
+    flex-flow: row;
+    height: 65px;
+}
+
+#bt-search { /*nút search */
+    background-color: rgba(0, 0, 0, 0);
+    margin: 12px;
+    cursor: pointer;
+}
+
+#room-of-opinions {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+}
+
+.bt-menu:hover {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.fa-user-circle:hover {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+#menu {
+    height: 65px; 
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    z-index: 1; 
+}
+ 
+.fa-user-circle {
+    font-size: 25px;
+    color: #383737ad;
+    padding: 30px;
+    cursor: pointer;
+}
+
+/* .fa-search {
+    font-size: 18px;
+    color: #383737ad;
+    padding: 2px;
+    cursor: pointer;
+} */
+
+.bt-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    color: #1f2c31c4;
+    margin: 12px;
+    text-decoration: none;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.link {
+    width: 155px;
+    height: 20px;
+    display: block;
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Change color of dropdown links on hover */
+.link:hover {font-size: 17px; transition: 0.2s;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#slidebar-background {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(43, 43, 43, 0.904);
+    background-image: url(https://images.unsplash.com/photo-1535209039648-9524289505fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80);
+    background-size: cover;
+    /* background-position-y: -1080px; */
+    display: flex;
+    /* flex-flow: column; */
+    /* justify-content: center; */
+}
+
+#transpa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+#text-decomotion {
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 87%;
+    color: rgb(248, 248, 248);
+    margin-left: 7%;
+    margin-top: -5%;
+}
+
+#text-info {
+    width: 40%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: rgb(248, 248, 248);
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+#search-box { 
+    width: 35%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    border: 1.2px solid #e6e6e6;
+    /* border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-top: 20px;
+    /* margin: 13px auto 0 auto; */
+}
+
+#search-bar, #search-bar:focus {
+    width: 88%;
+    height: 30px;
+    margin-left: 15px;
+    background-color: #1f2c3100;
+    color: #e6e6e6;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+#search-btn {
+    margin-top: 8px;
+    /* background-color: darkslateblue; */
+}
+
+.fa-search {
+    color: #e6e6e6;
+}
+
+#slidebar-chart {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    width: 80%;
+    /* background-color: aquamarine; */
+    margin: -7% auto 100px auto;
+}
+
+#chart {
+    width: 100%;
+    height: auto;
+    /* background-color: cornflowerblue; */
+}
+
+#motion-chart {
+    display: flex;
+    flex-flow: column;
+    /* margin-top: 10px; */
+}
+
+.cmotion {
+    width: 100%;
+    height: 160px;
+    margin: 25px auto 0 auto;
+    display: flex;
+    flex-flow: row;
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: hsla(0, 0%, 45%, 0.411) 0 0 16px;
+}
+
+.crank {
+    width: 95px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.motion-info {
+    width: 89%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.moimg {
+    width: 23%;
+    height: 99%;
+    background-color: rgb(158, 158, 158);
+    margin: auto 0 auto 0;
+    /* border-radius: 5px; */
+    /* box-shadow: hsla(0, 0%, 69%, 0.548) 0 0 16px; */
+}
+
+.motioncontain {
+    /* background-color: indianred; */
+    width: 70%;
+    margin: auto 0 auto 0;
+}
+
+.motitle {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 22px;
+}
+
+.moauthor {
+    margin-top: 5px;
+    margin-left: 10px; 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.mointer {
+    margin-top: 8px;
+    margin-left: 10px; 
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 60%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #2e2e2ec4
+}
+
+.boldstar {
+    color: rgb(223, 171, 3);
+}
+
+.nofill {
+    color: rgba(107, 107, 107, 0.575)
+}
+
+.moheart {
+    color: rgb(177, 39, 39);
+}
+
+.moop {
+    color: rgb(33, 45, 70);
+}
+
+#line {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #2e2e2ec4;
+    margin-bottom: 100px;
+}
+
+#loadmore {
+    cursor: pointer;
+}
+
+#loadmore:hover {
+    color: #222222ce;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.3s;
+}

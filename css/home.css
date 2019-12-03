@@ -1,0 +1,665 @@
+#roof {
+    margin: 0%;
+    background-color: whitesmoke;
+}
+
+#help {
+    height: 65px;
+    width: 30%;
+    background-color: rgba(231, 231, 231, 0.959);
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    height: 65px;
+} 
+ 
+#bt-search { /*nút search */
+    background-color: rgba(0, 0, 0, 0);
+    margin: 12px;
+    cursor: pointer;
+}
+
+#menu {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    z-index: 1;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+    color: #383737ad;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.fa-search {
+    font-size: 18px;
+    color: #383737ad;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.bt-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#home {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+}
+
+.bt-menu:hover {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.link {
+    width: 155px;
+    height: 20px;
+    display: block;
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Change color of dropdown links on hover */
+.link:hover {font-size: 17px; transition: 0.2s;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+.fa-search:hover {
+    font-size: 19px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+.fa-user-circle:hover {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+#content {
+    width: 100%;
+    height: 710px;
+}
+
+#image {
+    width: 100%;
+    height: 710px;
+    background-image: url(https://images.unsplash.com/photo-1551731409-43eb3e517a1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -10px;
+    background-attachment: fixed;
+}
+
+#transparent {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 710px;
+    background-color:rgba(36, 37, 42, 0.5);
+}
+
+#title {
+    display: flex;
+    flex-flow: column;
+    
+}
+
+#help2 {
+    width: 100%;
+    height: 220px;
+}
+
+#text-DEBATE {
+    width: 71%;
+    height: 97px;
+    text-align: center;
+    font-size: 115px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+#text-pro {
+    width: 42%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Crimson Text', serif;
+    color: rgba(231, 231, 231, 0.534);
+}
+
+#text-def {
+    width: 38%;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 150px;
+    color: rgba(173, 164, 164, 0.863);
+}
+
+#summary {
+    width: 40%;
+    align-items: flex-end;
+    text-align: right;  
+}
+
+#help3 {
+    height: 66%;
+}
+
+.rubric {
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(231, 231, 231, 0.959);
+    font-size: 19px; 
+    margin-right: 20px;
+    margin-bottom: 27px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.rubric:hover {
+    color: rgba(192, 192, 192, 0.959); 
+    font-size: 22px;
+    transition: 0.5s;
+}
+
+.writing {
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(173, 164, 164, 0.863);
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+#sidebar-second {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(245, 245, 245);
+}
+
+#text-comma {
+    text-align: center;
+    font-size: 150px;
+    margin-top: 70px;
+    color: rgba(39, 39, 39, 0.274);
+}
+
+#text-quote {
+    width: 70%;
+    margin-left: 220px;
+    margin-top: 10px;
+    align-self: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+ 
+#author {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#slidebar-third {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: row;
+    margin-top: 10px;
+    background-image: url(https://images.unsplash.com/photo-1532190795157-3f983fb7fa3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+}
+
+#transpa {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-flow: row;
+    background-color: #111111c0; 
+}
+
+#ex-intro {
+    width: 50%;
+    height: 100%;
+    flex-flow: column;
+    margin-left: 180px;
+    margin-top: 6%;
+    color:#e6e6e6e5;
+}
+
+#text-decobating {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(221, 221, 221);
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+#text-hintro {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.num-intro {
+    display: flex;
+    flex-flow: row;
+    margin: 45px;
+}
+
+#numbers {
+    width: 55%;
+    /* height: inherit; */
+    margin-left: 110px;
+    margin-top: -10px;
+    margin-top: 6%;
+}
+
+.hicon {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 45px;
+    margin-right: 30px;
+    color: #e6e6e6e5;
+}
+
+.num {
+    font-size: 45px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: #e6e6e6e5;
+}
+
+.under-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    color: #e6e6e6e5;
+}
+
+#sidebar-forth {
+    width: 100%;
+    height: 710px;
+    margin-top: 200px;
+}
+
+#background {
+    width: 500px;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: #c5bb83c4;
+    position: relative;
+    top: -20px;
+    right: 90px;
+}
+
+#image4 {
+    width: 500px;
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -560px;
+    right: -103px;
+}
+
+#text-upper {
+    color: #272626b0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    font-weight: 550;
+    position: relative;
+    top: -1030px;
+    right: -650px;
+    width: 500px;
+    margin: 0%;
+}
+
+#text-development {
+    color: #161616ee;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 90px;
+    position: relative;
+    top: -1018px;
+    right: -660px;
+    width: 700px;
+}
+
+#text-intro {
+    color: #272626b0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: -1018px;
+    right: -690px; 
+    width: 300px;
+}
+
+#features {
+    width: 820px;
+    height: 205px;
+    background-color: #161616ee;
+    position: relative;
+    top: -870px;
+    right: -700px; 
+    display: flex;
+    flex-flow: row;
+}
+
+.ft {
+    width: 205px;
+    height: 205px;
+    margin: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    border: solid whitesmoke 1px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 32px;
+    cursor: pointer;
+}
+
+.icon {
+    padding-top: 30px;
+    font-size: 70px;
+    color: #e4dedeee;
+}
+
+#sidebar-fifth {
+    width: 100%;
+    height: 710px;
+    margin-top: -100px;
+}
+
+#help9 {
+    width: 100%;
+    height: 60px;
+}
+
+#content {
+    display: flex;
+    flex-flow: row;
+}
+
+#image-title {
+    width: 47%;
+    height: 590px;
+    background-image: url(https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#transparent3 {
+    width: 100%;
+    height: 100%;
+    background-color: #181717b4;
+
+}
+
+#text-joinus {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 38%;
+    padding-left: 26.5%;
+    color:rgb(255, 255, 255);
+}
+
+#text-slogan {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color:rgba(199, 198, 198, 0.836);
+    padding-top: 10px;
+    padding-left: 18.5%;
+}
+
+#login {
+    width: 60%;
+    height: 300px;
+}
+
+#text-registerhere {
+    width: 100%;
+    color: #181717b4;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+#line {
+    width: 450px;
+    height: 3px;
+    background-color: #181717d2;
+    margin-left: 24%;
+    margin-top: 10px;
+    border: solid #181717b4 1px;
+    border-radius: 100%;
+}
+
+#help11 {
+    width: 100%;
+    height: 40px;
+}
+
+.help12 {
+    width: 60%;
+    height: 20px;
+}
+
+.login-div {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.long-bt {
+    width: 58%;
+    height: 47px;
+    margin-left: 170px;
+    background-color: whitesmoke;
+    border: solid 2px #302e2ebd;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.short-bt {
+    width: 27%;
+    height: 47px;
+    margin-left: 170px;
+    background-color: whitesmoke;
+    border: solid 2px #302e2ebd;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.short-bt2 {
+    width: 27%;
+    height: 47px;
+    margin-left: 5px;
+    background-color: whitesmoke;
+    border: solid 2px #302e2ebd;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+#checkbox {
+    margin-left: 190px;
+    margin-bottom: 0%;
+    vertical-align: bottom;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    color: #f1cf5ffa;
+}
+
+#text-keepmesignin {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#text-forgotpassword {
+    margin-left: 230px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    text-align: right;
+}
+
+#confirm {
+    width: 23.5%;
+}
+
+#password {
+    width: 23.5%;
+}
+
+.fa-eye, .fa-eye-slash {
+    font-size: 35px;
+    vertical-align: -25%;
+    margin-left: 10px;
+    color: #181717b4;
+    cursor: pointer;
+}
+
+.bt-black {
+    width: 26%;
+    height: 55px;
+    margin-left: 170px;
+    margin-right: 10px;
+    background-color: rgb(32, 32, 32);
+    border: solid 2px #302e2ebd;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#bt-signin {
+    margin-left: 10px;
+}
+
+#help13 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    padding: 15px;
+}
+ 
+#login input{
+    outline-style:none;
+}
+
+#footer {
+    width: 100%;
+    height: 300px;
+    background-color: #161616ee;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px whitesmoke inset !important;
+    box-shadow: 0 0 0 30px whitesmoke inset;
+}

@@ -1,0 +1,175 @@
+#roof {
+    margin: 0%;
+    background-color: rgb(230, 230, 230);
+}
+
+#help {
+    height: 65px;
+    width: 30%;
+    background-color: rgba(231, 231, 231, 0.959);
+}
+
+#header {
+    display: flex;
+    flex-flow: row;
+    height: 65px;
+}
+
+#bt-search { /*nút search */
+    background-color: rgba(0, 0, 0, 0);
+    margin: 12px;
+    cursor: pointer;
+}
+
+#menu {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    position: fixed;
+    z-index: 1;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+    color: #383737ad;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.fa-search {
+    font-size: 18px;
+    color: #383737ad;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.bt-menu {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    color: #1f2c31c4;
+    margin: 12px;
+    text-decoration: none;
+}
+
+#debate-room {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+}
+
+.bt-menu:hover {
+    color: rgb(32, 32, 32);
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 150;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropbtn:focus {
+    outline: none;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.link {
+    width: 155px;
+    height: 20px;
+    display: block;
+    color: #1f2c31c4;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    margin: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Change color of dropdown links on hover */
+.link:hover {font-size: 17px; transition: 0.2s;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+.fa-search:hover {
+    font-size: 19px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+.fa-user-circle:hover {
+    font-size: 26px;
+    color: rgb(32, 32, 32);
+    transition: 0.2s;
+}
+
+#slidebar-first {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1446814699583-d835df35a267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
+    background-size: cover;
+}
+
+#tran {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 688px;
+    background-color: rgba(24, 24, 24, 0.596);
+}
+
+#motion-text {
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px auto 0 auto;
+    color: rgb(231, 231, 231);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 50px;
+}
