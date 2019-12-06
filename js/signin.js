@@ -66,7 +66,11 @@ setInterval (function() {
     else {
     ifyounotsignin.style.display = "none";
     ifyousignin.style.display = "flex";
-}}, 10);
+// <<<<<<< HEAD
+}}, 1);
+
+// }}, 100);
+// >>>>>>> 1fe1c91031ce398fc5221f99e53d1cbda2bfc402
 
 var log_out = document.getElementById("log-out");
 log_out.addEventListener('click', logout);
