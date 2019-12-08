@@ -97,7 +97,7 @@
     position: relative;
     display: inline-block;
 }
-
+ 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
@@ -146,30 +146,310 @@
     transition: 0.2s;
 }
 
-#slidebar-first {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://images.unsplash.com/photo-1446814699583-d835df35a267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
-    background-size: cover;
-}
-
-#tran {
-    display: flex;
-    flex-flow: row;
+#slidebar-background {
     width: 100%;
     height: 688px;
-    background-color: rgba(24, 24, 24, 0.596);
+    /* background-color: brown; */
+    background-image: url(https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+    background-size: cover;
+    background-position-y: center;
 }
 
-#motion-text {
-    width: 60%;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 50px auto 0 auto;
-    color: rgb(231, 231, 231);
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 50px;
+#trans {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
+
+#container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 80%;
+    background-color: d#1b1b1b;
+    margin-top: 4%;
+}
+
+#line1 {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+}
+
+#canchinh {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+#motion-box {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #dfdfdf;
+}
+
+#info-box {
+    width: 100%;
+    height: 72%;
+}
+
+/* Dropdown Button */
+#dropBt {
+    color: rgb(190, 190, 190);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+}
+
+.fa-chevron-down {
+    margin: auto 0 auto 5px;
+}
+
+#choosing {
+    position: relative;
+    display: inline-block;
+}
+
+#select {
+    display: none;
+    position: absolute;
+    background-color: #141414;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: rgb(190, 190, 190);
+    font-family: 'Quicksand', sans-serif;
+    z-index: 1;
+}
+
+.option {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#matchup {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+}
+
+.side {
+    width: 80%;
+    height: auto;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 13px;
+    display: flex;
+    flex-flow: column;
+    font-size: 16px;
+}
+
+.introtitle {
+    width: 200px;
+    display: flex;
+    flex-flow: row;
+    font-size: 18px;
+    font-weight: bold;
+    color: #dfdfdf;
+    text-transform: capitalize;
+    /* background-color: deeppink; */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: auto 6px auto 0;
+    border-radius: 80px;
+}
+
+#dot1 {
+   background-color: rgb(85, 138, 125); 
+}
+
+#dot2 {
+    background-color: rgb(165, 118, 118);
+}
+
+#dot3 {
+    background-color: rgb(185, 148, 26);
+}
+
+.intromember {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin-top: 3px;
+    margin-left: 14px;
+    color: #b9b9b9;
+    /* background-color: dodgerblue; */
+}
+
+.member {
+    margin-top: 2px;
+}
+
+.role {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.spec {
+    text-transform: capitalize;
+}
+
+#chatbox {
+    display: none;
+    flex-flow: column;
+    margin-top: 10px;
+}
+
+#screen {
+    width: 100%;
+    height: 360px;
+    /* background-color: rgb(19, 19, 19); */
+}
+
+#m-container {
+    width: 100%;
+    height: 91%;
+    display: flex;
+    flex-flow: column;
+    overflow: auto; 
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+#m-container::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgb(61, 61, 61);
+    border-radius: 30px;
+} 
+
+#m-container::-webkit-scrollbar-thumb {
+    background-color: #0f0f0f;
+    width: 30px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+#m-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #1b1b1bf6;
+    opacity: 0;
+    border-radius: 30px;
+}
+
+.m {
+    width: 95%;
+    margin-top: 20px ;
+    display: grid;
+    grid-template-columns: 40px 80%;
+    grid-column-gap: 8px;
+    /* flex-flow: row; */
+    justify-content: space-between;
+    color: #ffffff;
+    word-wrap: break-word;
+}
+
+#default {
+    margin-top: 10px;
+}
+
+.user-ava {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    /* margin-top: 5px; */
+    background-color: darkgoldenrod;
+}
+
+.user-mess {
+    /* max-width: 100%; */
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 210px;
+    grid-column-gap: 8px;
+    /* background-color: darkorange; */
+}
+
+.username {
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: bold;
+}
+
+.message {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 15px; 
+    margin-top: 2px;
+    word-wrap: break-word;
+    /* white-space: pre-wrap; */
+}
+
+#typing-box {
+    width: 100%;
+    height: 8.5%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    background-color: #2b2b2b;
+    margin-top: 15px;
+}
+
+#input, #input:focus {
+    height:100%;
+    width: 77%;
+    border: none;
+    outline: none;
+    background-color: #2b2b2b00;
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 15px; 
+    color: #ffffff;
+}
+
+#send {
+    margin: auto 0 auto 0;
+    color: #b9b9b9;
+    cursor: pointer;
+    /* background-color: crimson; */
+}
+
+#atsign:hover, #send:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+#line2 {
+    width: 71%;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+
+
