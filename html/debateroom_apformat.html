@@ -43,7 +43,22 @@
             <div id="container">
                 <div id="line1">
                     <div id="canchinh">
-                        <div id="motion-box">TH regrets labelling characters as heroes and villains in children's entertainment</div>
+                        <div id="motion-box">
+                            <div id="motiontitle">TH regrets labelling characters as heroes and villains in children's entertainment</div>
+                            <div id="clock"><i class="far fa-clock"></i></div>
+                        </div>
+                        <div id="time-box">
+                            <div id="time-keeper">
+                                <form>
+                                    <input type="text" name="display"size="22"value="00:00:00" id="time-shown">
+                                </form>
+                                <div id="timeBtn">
+                                    <span id="over1" onmouseover="over1('red')" onmouseout="out1()" onclick="start()"> Start</span>
+                                    <span id="over2" onmouseover="over2('red')" onmouseout="out2()" onclick="stop()">Stop</span>
+                                </div>
+                            </div>
+                            <div id="motionicon"><i class="fas fa-copy"></i></div>
+                        </div>
                         <div id="info-box">
                             <div id="choosing">
                                 <div id="dropBt" > <div id="text">Matchup information</div> <i class="fas fa-chevron-down"></i></div>
@@ -113,7 +128,7 @@
                                                 <div class="message">Chat with your teammates to have best stratergies</div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> 
                                     <div id="typing-box">
                                         <input type="text" id="input" placeholder="Type something...">
                                         <!-- <div id="atsign"><i class="fas fa-at"></i></div> -->

@@ -78,7 +78,6 @@ function sendFunction() {
   }
 }
 
-
 var sumHeight = 0
 var m = document.getElementsByClassName("m");
 for (i=0;i<m.length; i+=1) {
@@ -89,6 +88,68 @@ var mContainer = document.getElementById("m-container");
 var mContainerHeight = mContainer.offsetHeight+15;
 if (sumHeight>mContainerHeight) {
   mContainer.style.overflowY = "scroll";
+}
+
+var motionBox = document.getElementById("motion-box");
+var timeBox = document.getElementById("time-box");
+
+var clockBtn = document.getElementById("clock");
+clockBtn.addEventListener('click', function(){
+  motionBox.style.display = 'none';
+  timeBox.style.display = 'grid';
+})
+
+var motionBtn = document.getElementById("motionicon");
+motionBtn.addEventListener('click',function(){
+  motionBox.style.display = 'grid';
+  timeBox.style.display = 'none';
+})
+
+
+var msec=0
+var sec=0
+sec.toPrecision(2);
+var min=1
+function start(){
+  document.forms[0].display.value=min+":"+sec+":"+msec
+  go=setTimeout("start()",1)
+  msec++
+
+  if(msec==100){
+  msec=0
+  sec++
+  }
+
+  if(sec==60){
+  sec=0
+  min++
+  }
+
+  if(min==3,sec==1){
+    clearTimeout(go)
+  }
+}
+
+
+
+function stop(){
+  clearTimeout(go)
+}
+
+function over1(test){
+  document.getElementById('over1').style.background=test
+}
+
+function out1(test){
+  document.getElementById('over1').style.background=test
+}
+
+function over2(test){
+  document.getElementById('over2').style.background=test
+}
+
+function out2(test){
+  document.getElementById('over2').style.background=test
 }
 
 

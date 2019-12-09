@@ -59,7 +59,7 @@ for (i=0; i<balls.length; i+=1) {
         current[0].classList.remove("current");
         this.className = "ball current";
         var id = this.id;
-        var index = id[4];
+        var index = id[4]; 
         var slides = document.getElementsByClassName("slide");
         for (a=0; a<slides.length; a+=1) {
             slides[a] = slides[a].style.display = "none";
