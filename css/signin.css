@@ -82,7 +82,7 @@
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
-    position: absolute; 
+    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -198,11 +198,11 @@
 #hahalife {
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #btn-signIn {
-    width: 100%;
+    width: 120px;
     height: 40px;
     display: flex;
     flex-flow: column;
@@ -218,7 +218,6 @@
     color: #1b1b1b;
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
-    font-weight: 500;
     cursor: pointer;
 }
 
@@ -325,7 +324,7 @@
     width: 40%;
 }
 
-#username {
+#username1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 45px;
     font-weight: 700;

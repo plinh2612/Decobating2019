@@ -11,7 +11,7 @@ async function clksignin() {
     console.log("username/password: " + username.value);
     console.log("password: " + password.value);
 
-    let uservalid = false 
+    let uservalid = false
     let userid = ''
     let userNameEmail = ''
     // get data
@@ -66,11 +66,8 @@ setInterval (function() {
     else {
     ifyounotsignin.style.display = "none";
     ifyousignin.style.display = "flex";
-// <<<<<<< HEAD
-}}, 1);
-
-// }}, 100);
-// >>>>>>> 1fe1c91031ce398fc5221f99e53d1cbda2bfc402
+    document.getElementById("username1").innerHTML = localStorage.username;
+}}, 100);
 
 var log_out = document.getElementById("log-out");
 log_out.addEventListener('click', logout);
