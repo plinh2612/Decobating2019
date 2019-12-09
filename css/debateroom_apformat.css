@@ -501,5 +501,10 @@
     background-color: cadetblue;
 }
 
+#otEmbedContainer {
+    width: 100%;
+    height: 100%;
+}
+
 
 
