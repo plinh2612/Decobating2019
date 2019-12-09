@@ -125,7 +125,7 @@ function start(){
   min++
   }
 
-  if(min==3,sec==1){
+  if(min==8){
     clearTimeout(go)
   }
 }
