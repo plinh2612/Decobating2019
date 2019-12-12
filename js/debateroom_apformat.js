@@ -136,21 +136,7 @@ function stop(){
   clearTimeout(go)
 }
 
-function over1(test){
-  document.getElementById('over1').style.background=test
-}
 
-function out1(test){
-  document.getElementById('over1').style.background=test
-}
-
-function over2(test){
-  document.getElementById('over2').style.background=test
-}
-
-function out2(test){
-  document.getElementById('over2').style.background=test
-}
 
 
 

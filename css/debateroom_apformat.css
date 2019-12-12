@@ -255,6 +255,17 @@
     transition: 0.3s;
 }
 
+#over1, #over2 {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#over1:hover, #over2:hover {
+    font-size: 23px;
+    color: #ffd139; 
+    transition: 0.3s;
+}
+
 #info-box {
     width: 100%;
     height: 72%;
