@@ -330,11 +330,8 @@
     /* background-color: springgreen; */
 }
 
-.current {
-    display: flex;
-}
-
 #slide0 {
+    display: flex;
     flex-flow: column;
 }
 
@@ -395,39 +392,6 @@
 
 #slide3 {
     flex-flow: column;
-}
-
-#continue {
-    width: 95%;
-    /* height: 50px; */
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    margin: 0 auto 30px auto;
-}
-
-.con-btn {
-    width: 100px;
-    text-align: center;
-    padding: 12px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.con-btn:hover {
-    font-size: 17px;
-    transition: 0.3s;
-}
-
-#next {
-    background-color: #242424;
-    color: #f1f1f1;
-}
-
-#pre {
-    display: flex;
 }
 
 
