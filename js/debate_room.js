@@ -18,56 +18,115 @@ function myFunction() {
     }
 
 var format = document.getElementsByClassName("format");
-var roof = document.getElementById("roof");
 var openmodal = document.getElementsByClassName("openmodal");
-var dname = document.getElementsByClassName("dname");
-// console.log(dname);
+
+var next = document.getElementById('next');
+var pre = document.getElementById('pre');
+
+var slide0 = document.getElementById("slide0");
 
 // Set chạy modal
 for (i=0; i<format.length; i+=1) {
-    format[i].addEventListener('click', function() {
-        for (a=0; a<openmodal.length; a+=1) {
-            openmodal[0] = openmodal[0].style.display = "flex";
+  format[i].addEventListener('click', function() {
+      for (a=0; a<openmodal.length; a+=1) {
+        openmodal[0] = openmodal[0].style.display = "flex";
+        if (slide0.style.display != "none") {
+          pre.style.display = "flex";
         }
-        // console.log(this.getElementsByClassName("dname"));
-        var itsFormat = this.getElementsByClassName("dname");
-        var itsFormatName = itsFormat[0].innerHTML;
-        var nameFormat = document.getElementsByClassName("name-format");
-        // console.log(nameFormat);
-        for (n=0; n<nameFormat.length; n+=1) {
-            var name = nameFormat[n].innerHTML;
-            if (name==itsFormatName) {
-                nameFormat[n].parentNode.style.display = "flex";
-            }
-            else {
-                nameFormat[n].parentNode.style.display = "none"; 
-            }
+        else {
+          pre.style.display = "none"
         }
-    })
+      }
+  }) 
 }
-// Set cho nút đóng lại chạy được
-var closebt = document.getElementsByClassName("fa-times");
-closebt[0].addEventListener('click', function() {
-    openmodal[0] = openmodal[0].style.display = "none";
+
+// Set close bt
+var closeBtn = document.getElementById("close-btn");
+closeBtn.addEventListener('click', function(e){
+  openmodal[0] = openmodal[0].style.display = "none";
 })
 
-// Set cho carousel chạy được
-var balls = document.getElementsByClassName("ball");
-for (i=0; i<balls.length; i+=1) {
-    balls[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("current");
-        current[0].classList.remove("current");
-        this.className = "ball current";
-        var id = this.id;
-        var index = id[4]; 
-        var slides = document.getElementsByClassName("slide");
-        for (a=0; a<slides.length; a+=1) {
-            slides[a] = slides[a].style.display = "none";
-        }
-        var slide = document.getElementById("slide"+index)
-        slide = slide.style.display = "flex";
-    })
-}
+//Chạy slide trong modal
+var next = document.getElementById('next');
+var pre = document.getElementById('pre');
+var slide3 = document.getElementById("slide3");
+
+next.addEventListener('click', function(){
+  var slides = document.getElementsByClassName('slide');
+  for (index = 0; index < slides.length-1; index +=1) {
+    if (slides[index].className == "slide current") {
+      if (slides[index+1].id == "slide3") {
+        next.style.display = "none";
+      }
+        // console.log(slides[index+1].id)
+        slides[index].className = "slide";
+        slides[index+1].className +=" current";
+      break
+    }
+  }
+})
+
+pre.addEventListener('click', function(){
+  var slides = document.getElementsByClassName('slide');
+  for (index = 0; index < slides.length-1; index +=1) {
+    if (slides[index].className == "slide current") {
+      
+        // console.log(slides[index+1].id)
+        slides[index].className = "slide";
+        slides[index-1].className +=" current";
+      break
+    }
+  }
+})
+
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.use(express.static(__dirname));
+app.get('/home', (req, res) =>{
+    res.sendFile('./html/home.html',{root:__dirname});//trang home
+})
+
+app.get('/room_of_opinions', (req, res) =>{
+    res.sendFile('./html/room_of_opinions.html',{root:__dirname}); //trang decothinking
+})
+
+app.get('/news', (req, res) =>{
+    res.sendFile('./html/news.html',{root:__dirname}); // trang news
+})
+
+app.get('/news_article', (req, res) =>{
+    res.sendFile('./html/news_article.html',{root:__dirname}); // trang news article
+})
+
+app.get('/debate_sociaties', (req, res) =>{
+    res.sendFile('./html/debate_sociaties.html',{root:__dirname}); // trang decosociaties
+})
+
+app.get('/debate_room', (req, res) =>{
+    res.sendFile('./html/debate_room.html',{root:__dirname}); // trang debate room
+})
+
+app.get('/signin', (req, res) =>{
+    res.sendFile('./html/signin.html',{root:__dirname}); // trang sign in
+})
+
+app.get('/opinionroom_chart', (req, res) =>{
+    res.sendFile('./html/opinionroom_chart.html',{root:__dirname}); // trang chart
+})
+
+app.get('/debateroom_apformat', (req, res) =>{
+    res.sendFile('./html/debateroom_apformat.html',{root:__dirname}); // trang sign in
+})
+
+app.get('/opiroom', (req, res) =>{
+    res.sendFile('./html/opiroom.html',{root:__dirname}); // trang sign in
+})
+
+// app.get('/home', (req, res) => res.sendFile('../html/home.html');
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 
 

@@ -11,7 +11,7 @@
 
 #header {
     display: flex;
-    flex-flow: row;
+    flex-flow: row; 
     height: 65px;
 }
 
@@ -278,19 +278,14 @@
 
 .openmodal {
     display: none;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: center;
     width: 100%;
-    height: 1025px;
+    height: 100%;
     position: fixed;
-    margin-top: -83.5%;
-    background-color: #3030309c;
+    margin-top: -83.3%;
+    background-color: #000000ad;
     z-index: 4;
-}
-
-.close-bt {
-    display: flex;
-    flex-flow: row-reverse;
-    padding: 10px;
 }
 
 .fa-times {
@@ -302,290 +297,143 @@
 .box {
     display: flex;
     flex-flow: column;
-    width: 80%;
-    height: 50%;
-    padding: 30px;
-    border-radius: 30px;
+    width: 50%;
+    height: 68%;
+    padding: 15px;
+    border-radius: 5px;
     background-color: rgb(250, 250, 250);
-    margin: 4% auto 0 auto;
+    margin: auto 0 auto 0;
+}
+
+#close-line {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.fa-times {
+    color: #1f1f1f;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-times:hover {
+    transition: 0.3s;
+    color: rgb(209, 69, 69);
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
-}
-
-#slide0 {
-    display: flex;
-    flex-flow: column;
-}
-
-.formatbox {
     display: none;
-    flex-flow: column;
-}
-
-.name-format {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 39px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #242424;
-}
-
-#slide1 {
-    display: none;
-    flex-flow: column;
-}
-
-#setyourrole-text {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 39px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #242424;
-}
-
-#intro-text {
-    width: 70%;
-    margin: 10px auto 0 auto;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
-}
-
-#choice {
-    width: 70%;
-    display: flex; 
-    flex-flow: row;
-    margin: 30px auto 0 auto;
-    justify-content: space-around;
-    /* background-color: aqua; */
-}
-
-.cbox {
-    /* background-color: blue; */
-    width: 300px;
-    height: 260px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.ii {
-    font-size: 100px;
-    margin: 0 auto 0 auto;
-    color: #2b2b2b;
-}
-
-.ctext {
-    margin: 50px auto 0 auto; 
-    width: 200px;
-    padding: 20px;
-    text-align: center;
-    background-color: #2b2b2b;
-    color: #dddddd;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.ctext:hover {
-    transition: 0.5s;
-    background-color: #cfcfcf;
-    color: #242424;
-}
-
-#slide2 {
-    display: none;
-    flex-flow: column;
-}
-
-#inviteyourteammate-text {
-    display: flex;
-    flex-flow: row;
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 39px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #242424;
-}
-
-#introtext {
-    width: 70%;
-    margin: 10px auto 0 auto;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px; 
-}
-
-#inputbox {
-    width: 55%;
-    display: flex;
-    flex-flow: row;
-    margin: 30px auto 0 auto;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px; 
-    font-weight: 700;
-    color: #242424;
-}
-
-#name-box {
-    width: 170px;
-    height: 230px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    /* background-color: brown; */
-}
-
-#input-box {
-    width: 210px;
-    height: 230px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-}
-
-.per {
-    /* background-color: rgb(44, 42, 165);  */
-    height: 40px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.person {
-    background-color: rgb(250, 250, 250);
-    border: solid 2px #302e2ebd;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    padding-left: 20px;
-    width: 400px;
-    height: 40px;
-}
-
-.person:focus {
-    outline: none;
-}
-
-#linehaha {
-    width: 90%;
-    height: 40px;
-    margin-top: 20px;
-    /* background-color: cadetblue; */
-    display: flex;
-    flex-flow: row-reverse;
-}
-
-#submit-bt {
-    height: 120%;
-    width: 200px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    color: rgb(250, 250, 250);
-    background-color: #242424;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    cursor: pointer;
-}
-
-#submit-bt:hover {
-    font-size: 17px;
-    transition: 0.2s;
-}
-
-#slide3 {
-    display: none;
-    flex-flow: column;
-}
-
-#teammingup-text {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #2b2b2b;
-    display: flex;
-    flex-flow: row;
-    margin: 200px auto 10px auto;
-}
-
-#long-box {
-    width: 700px;
-    height: 35px;
-    border: 2px #2b2b2b solid;
-    border-radius: 9px;
-    margin: 10px auto 10px auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-#run-box {
-    width: 65%;
-    height: 30px;
-    background-color: #2b2b2b;
-    border-radius: 7px;
-    margin-left: 3px;
-    display: flex;
-    flex-flow: row-reverse;
-}
-
-#percent {
-    margin-right: 10px;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    color: rgb(250, 250, 250);
-    font-family: 'Quicksand', sans-serif;
-}
-
-#carousel {
-    margin: 30px auto 0 auto;
-    width: 67px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-
-}
-
-.ball {
-    background-color: #cececec4;
-    width: 12px;
-    height: 12px;
-    border-radius: 45px;
-    cursor: pointer;
+    width: 95%;
+    height: 90%;
+    margin: 0 auto 10px auto;
+    /* background-color: springgreen; */
 }
 
 .current {
-    background-color: #999999; 
+    display: flex;
 }
+
+#slide0 {
+    flex-flow: column;
+}
+
+#format-title {
+    width: 100%;
+    height: 23%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+    color: #173044;
+    margin-top: 10px;
+}
+
+#debateformat-text {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+#formatintro {
+    width: 95%;
+    margin: 0 auto 0 auto;
+}
+
+.fa-dot-circle {
+    font-size: 13px;
+    margin: auto 0 auto 0;
+    color: #2c2c2c;
+}
+
+.intro-para {
+    width: 96%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.para {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+
+
+
+#slide1 {
+    flex-flow: column;
+    background-color: blueviolet;
+}
+
+#slide2 {
+    flex-flow: column;
+}
+
+#slide3 {
+    flex-flow: column;
+}
+
+#continue {
+    width: 95%;
+    /* height: 50px; */
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 auto 30px auto;
+}
+
+.con-btn {
+    width: 100px;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.con-btn:hover {
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#next {
+    background-color: #242424;
+    color: #f1f1f1;
+}
+
+#pre {
+    display: flex;
+}
+
+
+
+
+
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -594,3 +442,4 @@ input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px rgb(250, 250, 250) inset !important;
     box-shadow: 0 0 0 30px rgb(250, 250, 250) inset;
 }
+ 
