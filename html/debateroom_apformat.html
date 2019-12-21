@@ -49,13 +49,12 @@
                         </div>
                         <div id="time-box">
                             <div id="time-keeper">
-                                <form>
-                                    <input type="text" name="display"size="22"value="00:00:00" id="time-shown">
-                                </form>
-                                <div id="timeBtn">
-                                    <span id="over1" onmouseout="out1()" onclick="start()"> Start</span>
-                                    <span id="over2" onmouseout="out2()" onclick="stop()">Stop</span>
+                                <div id='time-display'></div>
+                                <div id="time-num">
+                                    <input id='minute' class="num" value= 7 type="text" placeholder="minute"> :
+                                    <input id='second' class="num" value= 30 type="text" placeholder="second">
                                 </div>
+                                <button id='set-time-button'>Start</button>
                             </div>
                             <div id="motionicon"><i class="fas fa-copy"></i></div>
                         </div>
