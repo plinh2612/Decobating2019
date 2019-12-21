@@ -17,6 +17,7 @@ function myFunction() {
       }
     }
 
+
 var format = document.getElementsByClassName("format");
 var openmodal = document.getElementsByClassName("openmodal");
 
@@ -30,15 +31,50 @@ for (i=0; i<format.length; i+=1) {
   format[i].addEventListener('click', function() {
       for (a=0; a<openmodal.length; a+=1) {
         openmodal[0] = openmodal[0].style.display = "flex";
-        if (slide0.style.display != "none") {
-          pre.style.display = "flex";
-        }
-        else {
-          pre.style.display = "none"
-        }
       }
   }) 
 }
+
+//Set chạy slide
+var slides = document.getElementsByClassName('slide');
+
+//Next btn
+next.addEventListener('click', function() {
+  currentSlide = document.getElementsByClassName("slide current")[0];
+  cuId = currentSlide.id;
+  num = cuId[5];
+  currentSlide.className = "slide";
+  num =parseInt(num);
+  num +=1;
+  if (num ==4) {
+    num = 0;
+  };
+  var nextId = "slide"+num;
+  nextSlide = document.getElementById(nextId);
+  nextSlide.className = "slide current";
+})
+
+// Pre btn
+pre.addEventListener('click', function() {
+  currentSlide = document.getElementsByClassName("slide current")[0];
+  cuId = currentSlide.id;
+  num = cuId[5];
+  currentSlide.className = "slide";
+  num =parseInt(num);
+  num -=1;
+  if (num ==-1) {
+    num = 3;
+  };
+  var nextId = "slide"+num;
+  nextSlide = document.getElementById(nextId);
+  nextSlide.className = "slide current";
+})
+
+//Close-bt
+var closeBtn = document.getElementsByClassName('close')[0];
+closeBtn.addEventListener('click',function() {
+  openmodal[0] = openmodal[0].style.display = "none";
+})
 
 
 
