@@ -50,6 +50,8 @@ for (i=0; i<format.length; i+=1) {
         para3.innerHTML = "When a speaker is delivering a speech, between the first minute and the sixth minute, opposing teams can raise POIs to ask rebuttal questions or make comments. The speaker has the right to accept or refuse them. However, do NOT POI your own side, You are forbidden from doing so.";
         document.getElementById('knowmorelink').href = "https://static1.squarespace.com/static/58970e4cd1758e28994b5bf8/t/5b6aeaf9758d4610026a2585/1533733633615/British+Parliamentary+Debating+for+Beginners.pdf";
         document.getElementById('knowmorelink').innerHTML = 'British Parliamentary format';
+        document.getElementsByClassName('turnofspeech')[0].id = "bp-img";
+        document.getElementsByClassName('partofspeech')[0].id = "ap-speech";
       }
 
       if (this.id == 'ws') { //WS content
@@ -63,7 +65,8 @@ for (i=0; i<format.length; i+=1) {
         para3.innerHTML ="POI: Between one and seven minutes into a speech, opposing teams can raise POIs to rebut, ask questions or to clarify themselves if necessary. The speaker has a right to deny or accept a POI.";
         document.getElementById('knowmorelink').innerHTML = 'World School format';
         document.getElementById('knowmorelink').href = "http://www.esu.org/wp-content/uploads/2019/01/Introduction-to-World-Schools-format-guide.pdf";
-        console.log(document.getElementsByClassName('turnofspeech')[0].style.backgroundImage);
+        document.getElementsByClassName('turnofspeech')[0].id = "ws-img";
+        document.getElementsByClassName('partofspeech')[0].id = "ws-speech";
       }
   }) 
 }

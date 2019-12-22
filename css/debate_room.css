@@ -385,10 +385,21 @@
 .turnofspeech {
     width: 93%;
     height: 300px;
-    background-image: url(AP_format.png);
     background-size: cover;
     background-position-x: center;
     margin: -10px auto 0 auto;
+}
+
+#ap-img {
+    background-image: url(AP_format.png); 
+}
+
+#bp-img {
+    background-image: url(BP_format.png);
+}
+
+#ws-img {
+    background-image: url(WS_format.png);
 }
 
 
@@ -403,11 +414,18 @@
 .partofspeech {
     width: 93%;
     height: 150px;
-    background-image: url(POItime.png);
     background-size: contain;
     background-position-x: center;
     background-repeat: no-repeat;
     margin: 30px auto 0 auto; 
+}
+
+#ap-speech {
+    background-image: url(POItime.png);
+}
+
+#ws-speech {
+    background-image: url(POItimeWS.png);
 }
 
 #slide3 {
